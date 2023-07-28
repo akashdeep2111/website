@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        display: inline;
+        padding-left: 60px;
+      }
+      header {
+        text-align: center;
+        padding: 6px;
+        /* background-image: url(img/download.jpeg); */
+        background-repeat: no-repeat;
+      }
+    </style>
+
+    <script>
+      function fun1() {
+        name = frm1.t1.value;
+        des = frm1.t2.value;
+        loc = frm1.t3.value;
+
+        if (name == "") {
+          alert("plesase enter your name ");
+          return false;
+        } else if (des == "") {
+          alert("plesase enter your designation ");
+          return false;
+        } else if (loc == "") {
+          alert("plesase enter your location ");
+          return false;
+        } else {
+          return true;
+          alert("go ahead");
+        }
+      }
+    </script>
+  </head>
+  <header
+    style="
+      background-image: url(img/day.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    >
+    <h1>Entertainment</h1>
+  </header>
+
+  <body style="height: 500px" background-color="white">
+    <section
+      style="
+        color: black;
+        display: block;
+        background-color: lavender;
+        padding: 20px;
+      "
+    >
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="#"> contact </a>
+          </li>
+          <li>
+            <a href="gallery.html"> image</a>
+          </li>
+          <li>
+            <a href="registration.html">registration</a>
+          </li>
+
+          <li>
+            <a href="result.html"> Result </a>
+          </li>
+          <li>
+            <a href="#"> about </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <h2><marquee>REGISTRATION FORM...</marquee></h2>
+    <center>
+      <div
+        style="
+          border: 3px solid black;
+          background-color: rgb(210, 221, 193);
+          border-radius: 20px;
+          width: 70%;
+        "
+      >
+        <h2
+          style="
+            padding: 5px;
+            text-shadow: 5px 5px 10px rgb(223, 49, 49),
+              10px 10px 20px rgb(192, 192, 71);
+
+            /* background-color: rgb(130, 168, 155);
+            border-radius: 20px; */
+            text-align: center;
+          "
+        >
+          Registration form
+        </h2>
+
+        <form name="frm1" onsubmit="return fun1()" action="thanks.html">
+          <pre>
+                  NAME        <input type="text" name="t1" placeholder="enter your name" />
+                
+                  DESIGNATION <input type="text" name="t2" placeholder="enter your designation"  />
+                  
+                  LOCATION    <input type="text" name="t3" placeholder="enteryour location" />
+
+                  <input type="submit" value="Register">
+      
+              </pre>
+        </form>
+      </div>
+    </center>
+  </body>
+  <footer
+    style="
+      color: rgb(168, 208, 186);
+      padding: 10px;
+      margin: 2px;
+      background-color: lightblue;
+      color: black;
+    "
+  >
+    by akashdeep
+  </footer>
+</html>
